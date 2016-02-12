@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="times">
+        <item>01:00 ق.ظ</item>
+        <item>02:00 ق.ظ</item>
+        <item>03:00 ق.ظ</item>
+        <item>04:00 ق.ظ</item>
+        <item>05:00 ق.ظ</item>
+        <item>06:00 ق.ظ</item>
+        <item>07:00 ق.ظ</item>
+        <item>08:00 ق.ظ</item>
+        <item>09:00 ق.ظ</item>
+        <item>10:00 ق.ظ</item>
+        <item>11:00 ق.ظ</item>
+        <item>12:00 ق.ظ</item>
+        <item>01:00 ب.ظ</item>
+        <item>02:00 ب.ظ</item>
+        <item>03:00 ب.ظ</item>
+        <item>04:00 ب.ظ</item>
+        <item>05:00 ب.ظ</item>
+        <item>06:00 ب.ظ</item>
+        <item>07:00 ب.ظ</item>
+        <item>08:00 ب.ظ</item>
+        <item>09:00 ب.ظ</item>
+        <item>10:00 ب.ظ</item>
+        <item>11:00 ب.ظ</item>
+        <item>12:00 ب.ظ</item>
+    </string-array>
+
+    <string-array name="blood_types">
+        <item>نامشخص</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="activity_levels">
+        <item>یک</item>
+        <item>دو</item>
+        <item>سه</item>
+        <item>چهار</item>
+    </string-array>
+</resources>

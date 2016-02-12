@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/snackBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:minHeight="48dp"
+    android:maxHeight="80dp"
+    android:background="@color/sb__snack_bkgnd"
+    android:clickable="true"
+    android:layout_alignParentBottom="true">
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/snackMessage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:text="sample message"
+        foo:customFont="fonts/yekan.ttf"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:background="#96CBCBCB"/>
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/snackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/sb__default_button_text_color"
+        android:textAllCaps="true"
+        android:text="Action"
+        foo:customFont="fonts/yekan.ttf"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar_simple"/>
+
+    <android.support.v4.widget.SlidingPaneLayout
+        android:id="@+id/sp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/leftpane"
+            android:name="ir.medxhub.doctor.about_us.InfoFragment"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"/>
+
+        <fragment
+            android:id="@+id/rightpane"
+            android:name="ir.medxhub.doctor.about_us.MembersFragment"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"/>
+    </android.support.v4.widget.SlidingPaneLayout>
+</LinearLayout>

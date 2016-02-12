@@ -1,0 +1,535 @@
+<resources>
+    <string-array name="PatientInfo">
+        <item>علایم حیاتی</item>
+        <item>بیماری ها</item>
+        <item>دارو ها</item>
+        <item>آلرژی ها</item>
+        <item>واکسن ها</item>
+        <item>آزمایشات و گزارشات پزشکی</item>
+        <item>اعمال جراحی</item>
+        <item>سابقه بیماری گذشته</item>
+        <item>سابقه خانوادگی</item>
+        <item>سابقه اجتماعی</item>
+        <item>اشخاص اورژانس</item>
+    </string-array>
+    <string name="app_name">مدکس هاب</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_occured">بروز خطا، لطفا مجددا سعی کنید!!</string>
+    <string name="downloading">در حال دانلود…</string>
+    <string name="loading">در حال بارگزاری…</string>
+    <string name="alert_exit">کلید بازگشت را مجددا فشار دهید</string>
+    <string name="last_version_installed">شما به آخرین نسخه دسترسی دارید.</string>
+    <string name="search">جستجو</string>
+    <string name="appointment">تعیین وقت</string>
+    <string name="medical_record">سابقه پزشکی</string>
+    <string name="health_state">ثبت وضعیت سلامتی</string>
+    <string name="my_doctors">پزشکان من</string>
+    <string name="pills_reminder">یادآور داروها</string>
+    <string name="questions">پرسش و پاسخ</string>
+    <string name="doctors_feed">مطالب روز پزشکان</string>
+    <string name="private_chat">گفتگوی خصوصی</string>
+    <string name="search_apointments">جستجو و نوبت گیری</string>
+    <string name="canceled_apointments">ویزیت های لغو شده</string>
+    <string name="apointments">نوبت گیری</string>
+    <string name="past_apointments">ویزیت های پیشین</string>
+    <string name="future_apointments">ویزیت های پیش رو</string>
+    <string name="sat">ش</string>
+    <string name="sun">ی</string>
+    <string name="mon">د</string>
+    <string name="tus">س</string>
+    <string name="wed">چ</string>
+    <string name="thu">پ</string>
+    <string name="fri">ج</string>
+    <string name="drug_name">نام دارو</string>
+    <string name="amount">مقدار مصرف</string>
+    <string name="time">زمان</string>
+    <string name="term">شرایط</string>
+    <string name="TajvizKonande">تجویز کننده</string>
+    <string name="DateOfBirth">تاریخ تولد: </string>
+    <string name="EmergCall">تماس ضروری : </string>
+    <string name="Tell">تلفن: </string>
+    <string name="if_not_registered"><![CDATA[<p>اگر حساب کاربری ندارید می توانید از<font color="#4278c7">اینـجــا </font>ثبت نام کنید</p>]]></string>
+    <string name="if_befor_registered"><![CDATA[<p>اگر قبل ثبت نام کرده اید : <font color="#4278c7">وارد شوید</font></p>]]></string>
+    <string name="error_username_null">نام کاربری نمی تواند خالی باشد!</string>
+    <string name="error_password_null">رمز عبور نمی تواند خالی باشد!</string>
+    <string name="connection_error">خطا در اتصال به اینترنت!</string>
+    <string name="try_again">تلاش مجدد</string>
+    <string name="wrong_birth_year">سال تولد صحیح نیست</string>
+    <string name="wrong_birth_month">ماه تولد صحیح نیست</string>
+    <string name="wrong_birth_day">روز تولد صحیح نیست</string>
+    <string name="register">ثبت نــام</string>
+    <string name="nameIsNull">نام را وارد کنید.</string>
+    <string name="familyIsNull">نام خانوادگی را وارد کنید.</string>
+    <string name="phoneIsNull">تلفن را وارد کنید.</string>
+    <string name="passIsNull">گذرواژه را وارد کنید.</string>
+    <string name="repassIsNull">تکرار گدرواژه را وارد کنید.</string>
+    <string name="passRepass">تکرار گذرواژه با گذرواژه مطابقت ندارد.</string>
+    <string name="selectProvince">استان را انتخاب کنید.</string>
+    <string name="selectCity">شهر را انتخاب کنید.</string>
+    <string name="insertBirthDay">تاریخ تولد را وارد کنید.</string>
+
+
+    <!-- temp strings -->
+    <string name="t_doctor_name_1">دکتر علی محمدی</string>
+    <string name="t_doctor_name_2">دکتر مجتبی ملکی</string>
+    <string name="t_doctor_name_3">دکتر محسن احمدی</string>
+    <string name="fouded_items">نتایج یافت شده</string>
+    <string name="year">سال</string>
+    <string name="specialty">"تخصص: "</string>
+    <string name="specialty2">"فوق تخصص: "</string>
+    <string name="address">"آدرس: "</string>
+    <string name="date">"تاریخ: "</string>
+    <string name="period">"ساعت: "</string>
+    <string name="distance_from_here">"فاصله از موقعیت کنونی:"</string>
+    <string name="hour">"ساعت "</string>
+    <string name="day">"روز "</string>
+    <string name="about_us">درباره ما</string>
+    <string name="about_me">درباره من</string>
+    <string name="messages">پیام ها</string>
+    <string name="new_message">یک پیام جدید!</string>
+    <string name="walkthrough1_heading">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="walkthrough1_discription">It is a long established fact that a reader will be distracted by the readable content.</string>
+    <string name="cancel">انصراف</string>
+    <string name="submit">تایید</string>
+    <string name="choose_appointment_date">تاریخ ویزیت را مشخص کنید</string>
+    <string name="visit_time_full">زمان ویزیت پر شده</string>
+    <string name="visit_time_past">زمان ویزیت گذشته</string>
+    <string name="visit_time_locked">امکان رزور این زمان وجود ندارد</string>
+    <string name="appointment_saved">نوبت با موفقیت برای شما ثبت شد!</string>
+    <string name="exit">خروج</string>
+    <string name="intro_text_1_2">هرکجا که هستید از راهنمایی های بهترین پزشکان کمک بگیرید!</string>
+    <string name="intro_text_1_1">مدکس هاب، اولین شبکه پزشکان و بیماران در کشور</string>
+    <string name="signup">ثبت نام</string>
+    <string name="make_appointment">وقت دهی</string>
+    <string name="appointment_deleted">نوبت ویزیت با موفقیت حذف شد!</string>
+    <string name="choose_start_date">تاریخ شروع را انتخاب کنید</string>
+    <string name="disease_item_saved">بیماری برای شما ثبت شد</string>
+    <string name="drug_item_saved">دارو برای شما ثبت شد</string>
+    <string name="allergies_item_saved">آلرژی برای شما ثبت شد</string>
+    <string name="vaccine_item_saved">واکسن برای شما ثبت شد</string>
+    <string name="reports_item_saved">گزارش پزشکی برای شما ثبت شد</string>
+    <string name="surgery_item_saved">عمل جراحی برای شما ثبت شد</string>
+    <string name="past_records_item_saved">سابقه بیماری برای شما ثبت شد</string>
+    <string name="family_history_item_saved">سابقه خانوادگی برای شما ثبت شد</string>
+    <string name="social_history_item_saved">سابقه اجتماعی برای شما ثبت شد</string>
+    <string name="emergency_member_item_saved">شخص اورژانس برای شما ثبت شد</string>
+    <string name="disease_item_removed">بیماری حذف شد</string>
+    <string name="drug_item_removed">دارو حذف شد</string>
+    <string name="allergies_item_removed">آیتم آلرژی حذف شد</string>
+    <string name="vaccine_item_removed">واکسن حذف شد</string>
+    <string name="reports_item_removed">گزارش پزشکی حذف شد</string>
+    <string name="surgery_item_removed">آیتم جراحی حذف شد</string>
+    <string name="past_records_item_removed">سابقه بیماری حذف شد</string>
+    <string name="family_history_item_removed">سابقه خانوادگی حذف شد</string>
+    <string name="social_history_item_removed">سابقه اجتماعی حذف شد</string>
+    <string name="emergency_member_item_removed">شخص اورژانس حذف شد</string>
+    <string name="delete_item">حذف آیتم</string>
+    <string name="ask_for_delete_item">آیا از حذف این آیتم مطمئن هستید؟</string>
+    <string name="first_diagnosis_date">تاریخ اولین تشخیص</string>
+    <string name="choose_level">انتخاب سطح</string>
+    <string name="yes">دارد</string>
+    <string name="no">ندارد</string>
+    <string name="no_activity">بدون تحرک</string>
+    <string name="low_activity">کم</string>
+    <string name="med_activity">متوسط</string>
+    <string name="high_activity">زیاد</string>
+    <string name="super_high_activity">خیلی زیاد</string>
+    <string name="activity_level">سطح فعالیت</string>
+    <string name="edit">ویرایش</string>
+    <string name="your_code">"کد شما: "</string>
+    <string name="birth_date">"تاریخ تولد: "</string>
+    <string name="gender">"جنسیت: "</string>
+    <string name="tall">"قد: "</string>
+    <string name="weight">"وزن: "</string>
+    <string name="blood_type">"گروه خونی: "</string>
+    <string name="age">"سن  "</string>
+    <string name="noAnswerForThisQ">تاکنون برای این سوال پاسخی ارائه نشده است.</string>
+    <string name="Iaccept">تایید می کنم</string>
+    <string name="noAccept">عدم تایید</string>
+    <string name="accepted">کاربرانی که تایید کرده اند:  </string>
+    <string name="countOfAnswers">\u00A0\u00A0\u00A0پاسخ ارائه شده است</string>
+    <string name="dashboard">داشبورد</string>
+    <string name="your_question_added_successfully">سوال شما ثبت شد!</string>
+    <string name="search_text">دکتر های حاضر در مدکس را جستجو کرده، و رزرو وقت را در سیستم انجام دهید.</string>
+    <string name="health_tips">نکات سلامت</string>
+    <string name="last_questions">آخرین سوالات</string>
+    <string name="complete_question">متن کامل سوال</string>
+    <string name="public_questions">پرسش های عمومی</string>
+    <string name="my_questions">پرسش های من</string>
+    <string name="latest_questions">جدیدترین سوالات</string>
+    <string name="no_question_found">هیچ سوالی یافت نشد</string>
+    <string name="fill_in_the_blanks">لطفا همه فیلدها را وارد کنید.</string>
+    <string name="ask_question">پرسیدن سوال</string>
+    <string name="salamatName">سلامت نامه</string>
+    <string name="search_hospital">جستجوی مراکز درمانی</string>
+    <string name="select_province_and_city_first">ابتدا استان و شهر را انتخاب کنید</string>
+    <string name="title_home">مشاوره آنلاین</string>
+    <string name="title_appointment">ویزیت</string>
+    <string name="pills">یاداور دارو</string>
+    <string name="buy">با پرداخت</string>
+    <string name="title_question">دریافت مشاوره</string>
+    <string name="free">رایگان</string>
+    <string name="title_free_question">پرسیدن سوال</string>
+
+    <string name="boards">بردهای تخصصی</string>
+
+    <string-array name="laboratory_type">
+        <item>همه</item>
+        <item>آزمايشگاه پاتوبيولوژِي</item>
+        <item>آزمايشگاه ژنتيک</item>
+        <item>آزمايشگاه قارچ شناسي</item>
+        <item>آزمايشگاه ويروس شناسي</item>
+    </string-array>
+    <string-array name="radiology_type">
+        <item>همه</item>
+        <item>راديولوژي</item>
+        <item>سي تي اسکن</item>
+        <item>ام-ار-آي-MRI</item>
+        <item>سونوگرافي</item>
+        <item>سنجش تراکم استخوان</item>
+        <item>پزشکي هسته اي</item>
+        <item>راديولوژي دهان،فک و صورت</item>
+
+    </string-array>
+    <string-array name="clinic_type">
+        <item>همه</item>
+
+        <item>کلينيک ترک اعتياد</item>
+        <item>کلينيک پوست و مو و زيبايي</item>
+        <item>کلينيک تغذيه و رژيم درماني</item>
+        <item>کلينيک دندانپزشکي</item>
+        <item>کلينيک جراحي محدود</item>
+        <item>کلينيک جامع ژنتيک</item>
+        <item>کلينيک چشم پزشکي</item>
+
+    </string-array>
+    <string-array name="hospital_type">
+        <item>همه</item>
+
+        <item>بيمارستان دولتي</item>
+        <item>بيمارستان خصوصي</item>
+        <item>بيمارستان خيريه</item>
+
+    </string-array>
+    <string-array name="pharmacy_type">
+        <item>همه</item>
+
+        <item>داروخانه هاي شبانه روزي</item>
+        <item>داروخانه هاي روزانه</item>
+        <item>داروخانه هاي دولتي</item>
+
+    </string-array>
+
+    <string name="attachments">پیوست ها</string>
+    <string name="suggestions">پیشنهادات و انتقادات</string>
+    <string name="chats">گفتگو ها</string>
+    <string name="system_admin">مدیریت سیستم</string>
+    <string name="message_send_error">ارسال پیام با خطا مواجه شد!!</string>
+    <string name="report_your_suggestion">با ارسال پیشنهادهای کارامد خود و همچنین گزارش ایرادات، ما را در بهبود هرچه بیشتر خدمات یاری نمائید.</string>
+    <string name="enter_report_content">متن گزارش نمیتواند خالی باشد</string>
+    <string name="enter_report_title">عنوان گزارش نمیتواند خالی باشد</string>
+    <string name="report_sent">گزارش شما با موفقیت ارسال شد</string>
+    <string name="error_uploading_file">بروز خطا در آپلود فایل</string>
+    <string name="crop_app_not_found">برنامه ای برای برش تصویر یافت نشد.</string>
+    <string name="uploaded_by">"بارگزاری شده توسط: "</string>
+    <string name="delete">حذف</string>
+    <string name="share">بازنشر</string>
+    <string name="rename">تغییر نام</string>
+    <string name="show">نمایش</string>
+    <string name="install_app">برنامه %s را نصب کنید!</string>
+    <string name="share_attachment">بازنشر فایل پیوست</string>
+    <string name="contact_us">ارتباط با ما</string>
+    <string name="from">"از طرف "</string>
+
+    <string name="m1">فروردین</string>
+    <string name="m2">اردیبهشت</string>
+    <string name="m3">خرداد</string>
+    <string name="m4">تیر</string>
+    <string name="m5">مرداد</string>
+    <string name="m6">شهریور</string>
+    <string name="m7">مهر</string>
+    <string name="m8">آبان</string>
+    <string name="m9">آذر</string>
+    <string name="m10">دی</string>
+    <string name="m11">بهمن</string>
+    <string name="m12">اسفند</string>
+    <string name="d2">یکشنبه</string>
+    <string name="d3">دوشنبه</string>
+    <string name="d4">سه شنبه</string>
+    <string name="d5">چهارشنبه</string>
+    <string name="d6">پنجشنبه</string>
+    <string name="d7">جمعه</string>
+    <string name="d1">شنبه</string>
+
+    <string name="unknown">نامعلوم</string>
+    <string name="NullInfoError">اطلاعات خواسته شده را وارد کنید !</string>
+    <string name="Add_Appoint">رزرو با موفقیت انجام شد.</string>
+    <string name="change_appointment_success">تغییر وقت با موفقیت انجام شد.</string>
+    <string name="patient_add_success">اطلاعات بیمار با موفقیت ثبت شد.</string>
+    <string name="doctor_add_success">اطلاعات دکتر با موفقیت ثبت شد.</string>
+    <string name="parent_patients">بیماران اصلی</string>
+    <string name="without_last_visite_time">ندارد</string>
+    <string name="message_was_sent_successfully">پیام با موفقیت ارسال شد</string>
+    <string name="no_patient_has_been_selected">ابتدا بیماران مورد نظر را انتخاب کنید!</string>
+    <string name="message_empty">ابتدا متن پیام را وارد کنید!</string>
+    <string name="base_info">اطلاعات پایه</string>
+    <string name="times">ساعت ها</string>
+    <string name="services">خدمات</string>
+    <string name="no_office">مطبی یافت نشد!</string>
+    <string name="doctors">پزشکان</string>
+    <string name="add_doctor">افزودن پزشک</string>
+    <string name="add_new_doctor">افزودن دکتر جدید</string>
+    <string name="province">استان</string>
+    <string name="city">شهر</string>
+    <string name="add_doctor_to_office">افزودن دکتر به مطب</string>
+    <string name="no_service_fount">سرویس مورد نظر یافت نشد!</string>
+    <string name="select">"انتخاب کنید : "</string>
+    <string name="change_set_success">تغییرات با موفقیت ثبت شد.</string>
+    <string name="exited">خارج شده</string>
+    <string name="set_count">ابتدا تعداد را مشخص کنید</string>
+    <string name="service_type">نوع خدمت</string>
+    <string name="count">تعداد</string>
+    <string name="trancsaction_success">عملیات پرداخت با موفقیت انجام شد.</string>
+    <string name="select_picture">تصویر را انتخاب کنید :</string>
+    <string name="camera">دوربین</string>
+    <string name="select_from_gallery">افزودن از گالری</string>
+    <string name="select_please">انتخاب کنید :</string>
+    <string name="ante_meridiem">ق.ظ</string>
+    <string name="post_meridiem">ب.ظ</string>
+    <string name="week_working_hours">ساعت های کار در هفته</string>
+    <string name="until">" تا "</string>
+    <string name="drag_to_right_text">به راست بکشید. وقت دهی کنید، اطلاعات ویزیت را ثبت کنید، اسناد پزشکی بیمار را آپلود کنید یا اطلاعات پرداخت بیمار را ثبت کنید.</string>
+    <string name="drag_to_left_text">به چپ بکشید. تماس بگیرید پیغام دهید یا پیامک بزنید.</string>
+    <string name="add">افزودن</string>
+    <string name="again_appoint">وقت دهی مجدد</string>
+    <string name="next_visit">مراجعه بعدی</string>
+    <string name="rial">" ریال"</string>
+    <string name="pictures">تصاویر</string>
+    <string name="add_picture">افزودن تصویر</string>
+    <string name="first_select_image">ابتدا یک تصویر انتخاب کنید!</string>
+    <string name="spesiality__">"تخصص: "</string>
+    <string name="code__">"کد: "</string>
+    <string name="m_sections">#ابپتثجچحخدذررژسشصضطظعغفقکگلمنوهی </string>
+    <string name="patient_profile">پرونده پزشکی</string>
+    <string name="profile">پروفایل</string>
+    <string name="medical_history">تاریخچه پزشکی</string>
+    <string name="cancel_update">لغو بروزرسانی</string>
+    <string name="update">بروزرسانی</string>
+    <string name="bloodtype">گروه خونی</string>
+    <string name="vital_signes_saaved">علایم حیاتی با موفقیت ذخیره شدند.</string>
+    <string name="heart_beat">ضربان قلب</string>
+    <string name="body_temperature">حرارت بدن</string>
+    <string name="height">قد</string>
+    <string name="weight_">وزن</string>
+    <string name="blood_sugar">قند خون</string>
+    <string name="blood_oxygen">اکسیژن خون</string>
+    <string name="blood_pressure">فشار خون</string>
+    <string name="experience">سابقه کاری:</string>
+    <string name="message_body">متن پیام</string>
+    <string name="select_all">انتخاب همه</string>
+    <string name="send_group_message">ارسال پیام جمعی</string>
+    <string name="send_group_message2">ارسال پیامک جمعی</string>
+    <string name="add_new_patient">افزودن بیمار جدید</string>
+
+    <string name="view">مرور کلی</string>
+
+
+    <string-array name="DoctorViews">
+        <item>درباره من</item>
+        <item>سوابق تحصیلی</item>
+        <item>بردهای تخصصی</item>
+        <item>سوابق کاری</item>
+        <item>افتخارات</item>
+        <item>انجمن ها</item>
+        <item>دوره های تکمیلی</item>
+        <item>تحقیقات و مقالات علمی انجام شده</item>
+    </string-array>
+
+
+
+
+    ////////////\\\\\\\\\\\\  start exam
+
+    <string name="examDiagnosisHint">لطفا تشخیص نهایی بحث را وارد کنید.</string>
+    <string name="exam_tag_selection">تگ های مربوطه را انتخاب نمایید.</string>
+    <string name="exam_case_deleted">بحث کنونی حذف شد.</string>
+    <string name="exam_case_title_empety">عنوان نمیتواند خالی باشد.</string>
+
+    <string-array name="anatomy">
+        //anatomy
+        <item>"@سر"</item>
+        <item>"گوش"</item>
+        <item>"چشم"</item>
+        <item>"سر"</item>
+        <item>"بینی"</item>
+        <item>"جمجمه"</item>
+        <item>"دندان"</item>
+        <item>"زبان"</item>
+
+        <item>"@گردن"</item>
+        <item>"راه هوا"</item>
+        <item>"مری"</item>
+        <item>"گردن"</item>
+
+        <item>"@عروقی"</item>
+        <item>"قفسه سینه"</item>
+        <item>"گردش"</item>
+        <item>"قلب"</item>
+        <item>"ریه"</item>
+        <item>"میان پرده"</item>
+        <item>"معده"</item>
+        <item>"عروقی"</item>
+
+        <item>"@اندام"</item>
+        <item>"پا و مج پا"</item>
+        <item>"مفصل ران و ران"</item>
+        <item>"اندام تحتانی"</item>
+        <item>"شانه و بازو"</item>
+        <item>"اندام فوقانی"</item>
+        <item>"مچ دست و دست"</item>
+
+        <item>"@پشت"</item>
+        <item>"پشت"</item>
+        <item>"MSK"</item>
+        <item>"ستون فقرات"</item>
+
+        <item>"@لگن خاصره و شکم"</item>
+        <item>"شکم"</item>
+        <item>"آئورت"</item>
+        <item>"کلیه.مثانه و غده آدرنال"</item>
+        <item>"روده بزرگ"</item>
+        <item>"کبد.لوزالمعده و درخت صفراوی"</item>
+        <item>"لگن خاصره"</item>
+        <item>"مقعد"</item>
+        <item>"دستگاه تناسلی"</item>
+        <item>"روده کوچک"</item>
+        <item>"طحال"</item>
+
+
+    </string-array>
+
+
+    <string-array name="speciality">
+        <item>"دندان پزشکی"</item>
+        <item>"پوست"</item>
+        <item>"پزشکی خانواده"</item>
+        <item>"عمل سر و گردن"</item>
+        <item>"آلرژی"</item>
+        <item>"بیهوشی"</item>
+        <item>"عمل قلب"</item>
+        <item>"قلب و عروق"</item>
+        <item>"مراقبتهای ویژه"</item>
+        <item>"غدد درون ریز"</item>
+        <item>"معده و روده"</item>
+        <item>"جراحی عمومی"</item>
+        <item>"امراض پیری"</item>
+        <item>"خون شناسی"</item>
+        <item>"بیماری های عفونت زا"</item>
+        <item>"طب داخلی"</item>
+        <item>"پزشکی آزمایشگاه"</item>
+        <item>"ژنتیک پزشکی"</item>
+        <item>"نفرولوژی"</item>
+        <item>"عصب شناسی"</item>
+        <item>"جراحی مغز و اعصاب"</item>
+        <item>"زنان و متخصص زنان"</item>
+        <item>"سرطان"</item>
+        <item>"چشم پزشکی"</item>
+        <item>"جراحی فک و صورت"</item>
+        <item>"جراحی ارتوپدی"</item>
+        <item>"پزشکی تسکینی"</item>
+        <item>"آسيب شناسي"</item>
+        <item>"طب اطفال"</item>
+        <item>"توانبخشی"</item>
+        <item>"جراحی پلاستیک"</item>
+        <item>"روانپزشکی"</item>
+        <item>"رادیولوژی"</item>
+        <item>"ریوی"</item>
+        <item>"روماتولوژی"</item>
+        <item>"اورولوژی"</item>
+        <item>"جراحی عروق"</item>
+    </string-array>
+
+    ////////////\\\\\\\\\\\\end exam
+
+
+
+
+
+
+    ////////////\\\\\\\\\\\start ads
+
+    <string-array name="city">
+        <item >تهران</item>
+        <item >کرج</item>
+        <item >مشهد</item>
+        <item >اصفهان</item>
+        <item >تبریز</item>
+        <item >شیراز</item>
+        <item >اهواز</item>
+        <item >قم</item>
+        <item >کرمانشاه</item>
+        <item >ارومیه</item>
+        <item >زاهدان</item>
+        <item >رشت</item>
+        <item >کرمان</item>
+        <item >همدان</item>
+        <item >اراک</item>
+        <item >یزد</item>
+        <item >اردبیل</item>
+        <item >بندرعباس</item>
+        <item >قزوین</item>
+        <item >زنجان</item>
+        <item >گرگان</item>
+        <item >ساری</item>
+        <item >دزفول</item>
+        <item >آبادان</item>
+        <item >بوشهر</item>
+        <item >بروجرد</item>
+        <item >خرم آباد</item>
+        <item >سنندج</item>
+        <item >اسلامشهر</item>
+        <item >کاشان</item>
+        <item >نجف آباد</item>
+        <item >ایلام</item>
+        <item >کیش</item>
+        <item >بیرجند</item>
+        <item >سمنان</item>
+        <item >شهرکرد</item>
+        <item >بندر ماهشهر</item>
+        <item >یاسوج</item>
+        <item >بجنورد</item>
+        <item >شوشتر</item>
+        <item >بهبهان</item>
+        <item >سبزوار</item>
+        <item >مسجد سلیمان</item>
+        <item >نیشابور</item>
+    </string-array>
+
+    <string name="post_comment">ارسال آگهی</string>
+    <string name="read_comments_title">بخون</string>
+    <string name="passwords_not_same">گذرواژه های وارد شده یکی نیس عزیز من</string>
+    <string name="spinLocation">انتخاب محل</string>
+    <string name="title_empty">عنوان و توضیحات اجیاریست.</string>
+
+    ////////////\\\\\\\\\\\\end ads
+
+
+
+    ////////////\\\\\\\\\\\\start editor
+    <string name="label_tag">تگ های خود را با " , " جدا کرده و وارد کنید.</string>
+    <string name="menu_send">ارسال</string>
+    <string name="label_subject">عنوان</string>
+    <string name="label_message">شرح</string>
+    <string name="label_signature">Signature</string>
+
+    <string name="menu_save">ذخیره</string>
+    <string name="menu_load">بارگذاری</string>
+
+
+</resources>

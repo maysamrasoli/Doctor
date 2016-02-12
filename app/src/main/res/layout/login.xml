@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor_blur" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_transparent_bordered_normal"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/visit_website"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/medxhub_trans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_transparent_bordered_normal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ir.medxhub.doctor.util.views.EditTextCustom
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    android:ellipsize="start"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="نام کاربری (--------09)"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    foo:customFont="fonts/yekan.ttf" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#64ffffff" />
+
+                <ir.medxhub.doctor.util.views.EditTextCustom
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    android:ellipsize="start"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="گذرواژه"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    foo:customFont="fonts/yekan.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:paddingRight="30dp">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    style="@style/drop_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="مرا به خاطر بسپار"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+
+                <ir.medxhub.doctor.util.views.CheckBox
+                    android:id="@+id/remember_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <ir.medxhub.doctor.util.views.RippleView
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                foo:rv_color="#d9fbfff0"
+                foo:rv_rippleDuration="200"
+                foo:rv_type="rectangle">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/tv_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rounded_green"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="ورود"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+
+                <ir.medxhub.doctor.util.progress.SmoothProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/GNowProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    foo:spb_colors="@array/gplus_colors"
+                    foo:spb_stroke_width="3dp" />
+            </ir.medxhub.doctor.util.views.RippleView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:foo="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:paddingRight="5dp"
+              android:layout_margin="5dp"
+              android:paddingLeft="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        foo:customFont="fonts/yekan.ttf" />
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/checkbox"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

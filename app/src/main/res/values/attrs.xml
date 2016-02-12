@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewCustom">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="JustifiedTextView">
+        <attr name="text" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float"/>
+        <attr name="alpha_factor" format="float"/>
+        <attr name="inner_parallax_factor" format="float"/>
+        <attr name="parallax_views_num" format="integer"/>
+        <attr name="circular_parallax" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer"/>
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer"/>
+        <attr name="rv_color" format="color"/>
+        <attr name="rv_centered" format="boolean"/>
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2"/>
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension"/>
+        <attr name="rv_zoom" format="boolean"/>
+        <attr name="rv_zoomScale" format="float"/>
+    </declare-styleable>
+
+    <attr name="a_in" format="float"/>
+    <attr name="a_out" format="float"/>
+    <attr name="x_in" format="float"/>
+    <attr name="x_out" format="float"/>
+    <attr name="y_in" format="float"/>
+    <attr name="y_out" format="float"/>
+
+    <!-- CheckBox Attribute -->
+    <declare-styleable name="CheckBox">
+        <attr name="checkbox_color" format="color"/>
+        <attr name="checkbox_checked_color" format="color"/>
+    </declare-styleable>
+
+    <!-- PaperButton Attribute -->
+    <declare-styleable name="PaperButton">
+        <attr name="paper_text" format="string"/>
+        <attr name="paper_text_size" format="dimension"/>
+        <attr name="paper_text_color" format="color"/>
+        <attr name="paper_font" format="string"/>
+        <attr name="paper_color" format="color"/>
+        <attr name="paper_corner_radius" format="dimension"/>
+        <attr name="paper_shadow_radius" format="float"/>
+        <attr name="paper_shadow_offset_x" format="float"/>
+        <attr name="paper_shadow_offset_y" format="float"/>
+        <attr name="paper_shadow_color" format="color"/>
+    </declare-styleable>
+
+    <!-- SmoothProgressBar -->
+    <declare-styleable name="SmoothProgressBar">
+        <attr name="spbStyle" format="reference"/>
+        <attr name="spb_color" format="color"/>
+        <attr name="spb_stroke_width" format="dimension"/>
+        <attr name="spb_stroke_separator_length" format="dimension"/>
+        <attr name="spb_sections_count" format="integer"/>
+        <attr name="spb_speed" format="float"/>
+        <attr name="spb_progressiveStart_speed" format="float"/>
+        <attr name="spb_progressiveStop_speed" format="float"/>
+        <attr name="spb_interpolator" format="enum">
+            <enum name="spb_interpolator_accelerate" value="0"/>
+            <enum name="spb_interpolator_linear" value="1"/>
+            <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
+            <enum name="spb_interpolator_decelerate" value="3"/>
+        </attr>
+        <attr name="spb_reversed" format="boolean"/>
+        <attr name="spb_mirror_mode" format="boolean"/>
+        <attr name="spb_colors" format="reference"/>
+        <attr name="spb_progressiveStart_activated" format="boolean"/>
+        <attr name="spb_background" format="reference"/>
+        <attr name="spb_generate_background_with_colors" format="boolean"/>
+        <attr name="spb_gradients" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="Theme">
+        <attr name="rte_icMenuLoad" format="reference" />
+    </declare-styleable>
+</resources>

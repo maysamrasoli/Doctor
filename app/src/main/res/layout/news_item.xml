@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    foo:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/articles"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ir.medxhub.doctor.util.views.RoundedImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="دکتر آیدا کاظمی"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_dash_title"
+                android:textStyle="bold"
+                foo:customFont="fonts/iransansmobile.ttf"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/user_avatar"
+                android:layout_toStartOf="@+id/user_avatar"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/name"
+                android:layout_alignRight="@+id/name"
+                android:layout_below="@+id/name"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/specialty"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="متخصص زیبایی"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="@dimen/font_size_dash_h1"
+                    foo:customFont="fonts/iransansmobile_ultralight.ttf"
+
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/stethoscope11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/linearLayout3"
+                android:layout_alignStart="@+id/linearLayout3"
+                android:layout_below="@+id/linearLayout3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/date"
+                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="یک ساعت قبل"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="@dimen/font_size_dash_h1"
+                    foo:customFont="fonts/iransansmobile_ultralight.ttf" />
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/calender_icon" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/name"
+                android:src="@drawable/flag15" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/flag"
+                android:layout_alignStart="@+id/flag"
+                android:layout_alignTop="@+id/flag"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:src="@drawable/file_sharing1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_f_d_line"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/arrow"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهموم از صنعت چاپ و با استفاده از طراحان گرافیک است.چابگرها و متن"
+                    android:textColor="@color/f_d_h_titles"
+                    foo:customFont="fonts/iransansmobile_bold.ttf" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/intro_background"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/summary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهموم از صنعت چاپ و با استفاده از طراحان گرافیک است.چابگرها و متن بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.کتاب های زیادی"
+                    android:textColor="@color/f_d_h_titles"
+                    foo:customFont="fonts/iransansmobile.ttf" />
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ادامه..."
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/main_color"
+                    foo:customFont="fonts/iransansmobile.ttf" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_count_comments"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_simple_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نظرات"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/iransansmobile_ultralight.ttf" />
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/count_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/comments16" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_1"
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/btn_count_accepted"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_simple_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تایید پزشک"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/iransansmobile_ultralight.ttf" />
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/count_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/basic14" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_2"
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/btn_count_like"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_simple_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تشکر"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/iransansmobile_ultralight.ttf" />
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/count_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:textColor="@color/f_d_h_titles"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/heart" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

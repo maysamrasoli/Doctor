@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/tv_no_item_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:text="@string/no_question_found"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        foo:customFont="fonts/yekan.ttf" />
+
+    <ir.medxhub.doctor.util.progress.SmoothProgressBar
+        android:id="@+id/progressBar"
+        style="@style/GNowProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        foo:spb_colors="@array/gplus_colors"
+        foo:spb_stroke_width="3dp" />
+
+    <ir.medxhub.doctor.util.views.fab.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/new_question"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_plus_red"
+        foo:fab_colorNormal="@android:color/white"
+        foo:fab_colorPressed="@color/default_background"
+        foo:fab_colorRipple="@color/main_color" />
+</RelativeLayout>

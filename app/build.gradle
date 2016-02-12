@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "ir.medxhub.doctor"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        useLibrary 'org.apache.http.legacy'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+packagingOptions {
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+}
+
+task indexAssets {
+    description 'Index Build Variant assets for faster lookup by AssetManager'
+
+    ext.assetsSrcDir = file( "${projectDir}/src/main/assets" )
+
+    inputs.dir assetsSrcDir
+
+    doLast {
+        android.applicationVariants.each { target ->
+            // create index
+            def contents = ""
+            def tree = fileTree(dir: "${ext.assetsSrcDir}", include: ['**/*.ttf'], exclude: ['**/.svn/**', '*.index'])
+            // use this instead if you have assets folders in each flavor:
+            // def tree = fileTree(dir: "${ext.variantPath}", exclude: ['**/.svn/**', '*.index'])
+            tree.visit { fileDetails ->
+                contents += "${fileDetails.relativePath}" + "\n"
+            }
+
+            // create index file
+            def assetIndexFile = new File("${ext.assetsSrcDir}/assets.index")
+            assetIndexFile.write contents
+        }
+    }
+}
+
+indexAssets.dependsOn {
+    tasks.matching { task -> task.name.startsWith( 'merge' ) && task.name.endsWith( 'Assets' ) }
+}
+
+tasks.withType( JavaCompile ) {
+    compileTask -> compileTask.dependsOn indexAssets
+}
+
+indexAssets
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':RTEditor-Toolbar')
+
+    //    compile(project(':PersianDatePicker')) {
+    //    }
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:22.1.1'
+    compile 'com.android.support:recyclerview-v7:22.1.1'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.ogaclejapan.arclayout:library:1.0.1@aar'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.commit451:PhotoView:1.2.4@aar'
+
+
+
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    testCompile 'junit:junit:4.12'
+
+
+    //    compile 'org.solovyev.android.views:linear-layout-manager:0.5@aar'
+    //    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+}

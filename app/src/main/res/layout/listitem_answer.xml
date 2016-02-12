@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardPreventCornerOverlap="false"
+    foo:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/block_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_toLeftOf="@+id/tv_name"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:text="پاسخ داد"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    foo:customFont="fonts/yekan.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/dark_blue"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        foo:customFont="fonts/yekan.ttf" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/calender_icon" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_avatar" />
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/frame7090"/>
+
+                <ir.medxhub.doctor.util.progress.ProgressBarCircularIndeterminate
+                    android:id="@+id/progressBarCircularIndeterminate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="#1E88E5"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/tv_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            foo:customFont="fonts/yekan.ttf"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

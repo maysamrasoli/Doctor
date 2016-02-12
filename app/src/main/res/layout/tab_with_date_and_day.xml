@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tabsLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tab_indicator"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="7dp">
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/tab_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="سه شنبه"
+        android:background="@color/dark_blue"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        foo:customFont="fonts/yekan.ttf"/>
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/tab_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:text="12"
+        android:textColor="@color/dark_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        foo:customFont="fonts/yekan.ttf"/>
+</LinearLayout>

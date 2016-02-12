@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:foo="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/bg_side_menu_item"
+                android:paddingBottom="7dp">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/icons"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/icon_red"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <ImageView
+            android:id="@+id/icon_white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </RelativeLayout>
+
+    <ir.medxhub.doctor.util.views.TextViewCustom
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/icons"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        foo:customFont="fonts/yekan.ttf"/>
+</RelativeLayout>

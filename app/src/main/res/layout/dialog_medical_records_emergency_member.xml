@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    foo:cardBackgroundColor="@android:color/white"
+    foo:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="افزودن اشخاص اورژانس"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <ir.medxhub.doctor.util.views.EditTextCustom
+            android:id="@+id/fullname"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_gray"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="نام و نام خانوادگی"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@android:color/darker_gray"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <ir.medxhub.doctor.util.views.EditTextCustom
+            android:id="@+id/relation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_gray"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="نسبت فرد با بیمار"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@android:color/darker_gray"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <ir.medxhub.doctor.util.views.EditTextCustom
+            android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_gray"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="موبایل"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@android:color/darker_gray"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <ir.medxhub.doctor.util.views.EditTextCustom
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_gray"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="تلفن منزل"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@android:color/darker_gray"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <ir.medxhub.doctor.util.views.EditTextCustom
+            android:id="@+id/work_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/stroke_gray"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_vertical|right"
+            android:hint="تلفن محل کار"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@android:color/darker_gray"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_simple_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="ثبت"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                foo:customFont="fonts/yekan.ttf" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@color/light_gray" />
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_simple_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="انصراف"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                foo:customFont="fonts/yekan.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

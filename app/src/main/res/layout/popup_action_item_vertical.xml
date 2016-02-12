@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:foo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/btn_simple_white"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/tv_title"
+            style="@style/drop_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:text="test"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            foo:customFont="fonts/yekan.ttf"/>
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:padding="3dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="170dp"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+</LinearLayout>

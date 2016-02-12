@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    foo:contentInsetEnd="0dp"
+    foo:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/main_color">
+
+        <ImageView
+            android:id="@+id/sidebar_toggle_btn"
+            android:layout_width="@dimen/action_bar_height"
+            android:layout_height="@dimen/action_bar_height"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_simple_main_color"
+            android:layout_gravity="start"/>
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="@dimen/action_bar_height"
+            android:layout_height="@dimen/action_bar_height"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:padding="13dp"
+            android:background="@drawable/btn_simple_main_color"
+            android:layout_gravity="start"/>
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            foo:customFont="fonts/yekan.ttf"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sidebar_toggle_btn"
+            android:layout_toRightOf="@+id/refresh"
+            android:layout_toEndOf="@+id/refresh" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/refresh"
+            android:layout_toRightOf="@id/sidebar_toggle_btn"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

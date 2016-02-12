@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:orientation="vertical"
+    android:background="#f5f6f8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:src="@drawable/search_head_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="انتخاب موقعیت مکانی : "
+                        android:textColor="@color/dark_gray"
+                        android:textSize="18sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+                    <ImageView
+                        android:src="@mipmap/numbe1_red"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ir.medxhub.doctor.util.views.TextViewCustom
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="شهر"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="18sp"
+                            app:customFont="fonts/yekan.ttf"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:minWidth="200dp"
+                            android:layout_gravity="right"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_bordered"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@mipmap/ic_triangle"/>
+
+                            <Spinner
+                                android:layout_width="wrap_content"
+                                android:minWidth="200dp"
+                                android:id="@+id/sp_city"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:gravity="right"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ir.medxhub.doctor.util.views.TextViewCustom
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="استان"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="18sp"
+                            app:customFont="fonts/yekan.ttf"/>
+
+                        <LinearLayout
+                            android:layout_gravity="right"
+                            android:layout_width="wrap_content"
+                            android:minWidth="200dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_bordered"
+                            android:orientation="horizontal"
+                            android:padding="1dp">
+
+                            <ImageView
+
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@mipmap/ic_triangle"/>
+
+                            <Spinner
+                                android:id="@+id/sp_province"
+                                android:layout_width="wrap_content"
+                                android:minWidth="200dp"
+                                android:layout_height="fill_parent"
+                                android:background="@android:color/white"
+                                android:gravity="right"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <ir.medxhub.doctor.util.views.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="خدمات مورد نظر خود را انتخاب کنید :"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp"
+                    app:customFont="fonts/yekan.ttf"/>
+
+                <ImageView
+                    android:src="@mipmap/number2_red"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp">
+
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/chart"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_stethoscope"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="پزشکان"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_pharmacy"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="داروخانه ها"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="75dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_hospital"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="بیمارستان ها"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="80dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_clinic"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="کلینیک ها"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_laboratory_white"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="آزمایشگاه ها"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="80dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_radiology"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                    <ir.medxhub.doctor.util.views.TextViewCustom
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="تصویربرداری"
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        app:customFont="fonts/yekan.ttf"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+

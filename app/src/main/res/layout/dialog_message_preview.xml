@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:foo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius_bordered"
+        android:orientation="vertical">
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            foo:customFont="fonts/yekan.ttf"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/main_color"
+                android:textSize="19sp"
+                foo:customFont="fonts/yekan.ttf"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/ic_message_gray"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/main_color"/>
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            foo:customFont="fonts/yekan.ttf"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/main_color"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/delete_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_transparent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="حذف"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                foo:customFont="fonts/yekan.ttf"/>
+
+            <View
+                android:layout_width="0.7dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_color"/>
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/close_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_transparent"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="بستن"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                foo:customFont="fonts/yekan.ttf"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

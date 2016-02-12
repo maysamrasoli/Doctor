@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.medxhub.doctor">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="ir.medxhub.doctor.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="ir.medxhub.doctor.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".M"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait">
+
+
+
+
+
+        </activity>
+        <!--<activity-->
+        <!--android:name=".guest.searchFragment"-->
+        <!--android:screenOrientation="portrait">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name=".Login" />
+        <activity android:name=".util.ImagePreviewActivity" />
+        <activity android:name=".util.MyDatePicker" />
+        <activity android:name=".util.ChooseImage" />
+        <activity android:name=".doctor_profile.Profile" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".dashboard.DashboardSearch" />
+        <activity android:name=".dashboard.TipsActivity" />
+        <activity android:name=".faq.ShowFAQ" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".exam.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar.NoActionBar"/>
+
+        <activity
+            android:name=".exam.ActivitySecond"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar.NoActionBar" />
+        <activity
+            android:name=".advertisement.ActivityAllAds"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar.NoActionBar"/>
+        <activity
+            android:name=".advertisement.ActivityViewAds"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+        <activity
+            android:name=".advertisement.ActivitySendAds"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeNoActionBar" />
+
+        <activity
+            android:name=".editor.RichTextEditor"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditorThemeLight"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.onegravity.rteditor.media.choose.MediaChooserActivity"/>
+        <activity
+            android:name="com.onegravity.rteditor.media.crop.CropImageActivity"/>
+
+
+        <activity
+            android:name=".guest.GuestMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".guest.GuestSearchResult"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".search.MakeAppointment"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".search.SearchResultActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".about_us.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.Message"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".util.DatePicker"
+            android:theme="@style/Theme.Translucent" />
+        <activity
+            android:name=".faq.questionSearchResult"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="ir.medxhub.doctor" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+    </application>
+
+</manifest>

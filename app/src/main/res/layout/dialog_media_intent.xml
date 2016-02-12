@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="40dp"
+    foo:cardBackgroundColor="@color/white"
+    foo:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ir.medxhub.doctor.util.views.TextViewCustom
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/top_rounded_grey"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/select_please"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="visible"
+            foo:customFont="fonts/yekan.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/tv_item1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_menu_item_transparent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/select_from_gallery"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:visibility="visible"
+                foo:customFont="fonts/yekan.ttf" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray"/>
+
+            <ir.medxhub.doctor.util.views.TextViewCustom
+                android:id="@+id/tv_item2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_menu_item_transparent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/camera"
+                android:textColor="@color/dark_gray"
+                android:textSize="15sp"
+                android:visibility="visible"
+                foo:customFont="fonts/yekan.ttf" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/light_gray"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:maxHeight="300dp"
+            android:src="@drawable/default_image" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ir.medxhub.doctor.util.views.CustomButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_gray"
+                android:text="انصراف"
+                android:textColor="@color/white"
+                foo:customFont="fonts/yekan.ttf" />
+
+            <ir.medxhub.doctor.util.views.CustomButton
+                android:id="@+id/btn_send"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_rounded_green"
+                android:text="تایید"
+                android:textColor="@color/white"
+                foo:customFont="fonts/yekan.ttf" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

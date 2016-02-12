@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="translucent_background">#96000000</drawable>
+
+    <color name="main_color">#fff36e62</color>
+    <color name="main_color3">#ff6050</color>
+    <color name="main_color_alter">#ffcf4436</color>
+    <color name="main_color_dark">#ffc13f32</color>
+    <color name="main_color_dark_alter">#ffa44032</color>
+    <color name="main_color_transparent">#60E84C3D</color>
+    <color name="default_background">#f1f1f1</color>
+    <color name="gray">#CBCBCB</color>
+    <color name="gray_alter">#ffb2b2b2</color>
+    <color name="dark_gray">#ff7f7f7f</color>
+    <color name="light_gray">#f1f1f1</color>
+    <color name="light_gray2">#ffdddddd</color>
+    <color name="error_color">#830a00</color>
+    <color name="red">#ffc9413c</color>
+    <color name="success_color">#ff09b531</color>
+    <color name="green">#6DC337</color>
+    <color name="green_alter">#5ea72f</color>
+    <color name="dark">#3B464C</color>
+    <color name="medium_dark">#ff414d53</color>
+    <color name="blue">#00a0dc</color>
+    <color name="blue_alter">#ff0088bb</color>
+    <color name="dark_blue">#ff3e4453</color>
+    <color name="yellow">#fffabe08</color>
+
+    <!-- message colors -->
+    <color name="message_color_1">#ffe1fdc9</color>
+    <color name="message_color_2">#ffc0fdf1</color>
+
+    <!-- Progress Button -->
+    <color name="green_pressed">#ff96c400</color>
+    <color name="green_normal">#ffa1d300</color>
+    <color name="green_complete">#ff09b531</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff00b557</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <!--<color name="medium_dark_blue">#ff4f5669</color>-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#50000000</color>
+    <color name="transparent_highlight">#3c7f7f7f</color>
+
+    <!-- CheckBox Colors -->
+    <color name="checkbox_color">#6d6d6d</color>
+    <color name="checkbox_checked_color">#55b03d</color>
+    <color name="checkbox_mark_color">#eeeeee</color>
+
+    <!-- Snack Bar Colors -->
+    <color name="sb__snack_bkgnd">#323232</color>
+    <color name="sb__snack_alert_bkgnd">#ffff4444</color>
+    <color name="sb__snack_succes_bkgnd">#ff00b557</color>
+    <color name="sb__transparent">#00000000</color>
+    <color name="sb__dim_white">#20FFFFFF</color>
+    <color name="sb__button_text_color">#FB6541</color>
+
+    <!-- PaperButton Colors -->
+    <color name="paper_text_color">#60000000</color>
+    <color name="paper_button_color">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="paper_button_shadow_color">#000000</color>
+
+    <!-- SmoothProgressBar -->
+    <color name="gplus_color_1">#ff09b531</color>
+    <color name="gplus_color_2">#ffffbb33</color>
+    <color name="gplus_color_3">#ff00ddff</color>
+    <color name="gplus_color_4">#ffff4444</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <!-- fab -->
+    <color name="material_blue_500">#5677fc</color>
+
+
+    <color name="f_d_h_back">#dadada</color>
+    <color name="f_d_h_box">#EAEAEA</color>
+    <color name="f_d_h_titles">#3D3D3D</color>
+    <color name="f_d_h_titles_link">#66CBE2</color>
+
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="gray1">#e7e7e7</color>
+
+
+    <!-- exam -->
+    <color name="tabColor">#125688</color>
+    <color name="tabColorDark">#0f3f63</color>
+
+
+    <!-- ads -->
+    <color name="green_light">#6EB00F</color>
+    <color name="green_dark">#56890d</color>
+</resources>
